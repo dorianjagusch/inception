@@ -1,7 +1,7 @@
 FROM alpine:3.18
 
 COPY ./conf/my.cnf /etc/my.cnf.d/my.cnf
-COPY tools/script.sh /tmp/mariadb-setup.sh
+COPY ./tools/script.sh /tmp/mariadb-setup.sh
 
 RUN apk update && \
 	apk add --no-cache \
