@@ -55,26 +55,24 @@ You will need to create a multi-container environment using Docker and Docker Co
    Create a .env file or use the default values within the docker-compose.yml file. You may need to set database passwords, network configurations, or other environment-specific variables.
    There is an example .env file in the root of this repository.
 
-   3.Build Docker Images:
-      Build the Docker images for each service by running:
+3.Build Docker Images:
+   Build the Docker images for each service by running:
+   ```bash
+   docker-compose build
+   ```
+
+4. Start the Services:
+   Bring up all services by running:
+   ```bash
+   docker-compose up -d
+   ```
+
+5. Access the Web Application:
+   Visit http://localhost:8080 in your web browser to access the WordPress site.
+   Visit http://localhost:8080/admin to access The admin page.
    
-      ```bash
-      docker-compose build
-      ```
-   4. Start the Services:
-      Bring up all services by running:
-      
-      ```bash
-      docker-compose up -d
-      ```
-   
-   4. Access the Web Application:
-   
-      Visit http://localhost:8080 in your web browser to access the WordPress site.
-      Visit http://localhost:8080/admin to access The admin page.
-   
-   5. Manage Services:
-      You can stop the services with:
-      ```bash
-      docker-compose down
-      ```
+6. Manage Services:
+   You can stop the services with:
+   ```bash
+   docker-compose down
+   ```
