@@ -55,7 +55,7 @@ You will need to create a multi-container environment using Docker and Docker Co
    Create a .env file or use the default values within the docker-compose.yml file. You may need to set database passwords, network configurations, or other environment-specific variables.
    There is an example .env file in the root of this repository.
 
-3.Build Docker Images:
+3. Build Docker Images:
    Build the Docker images for each service by running:
    ```bash
    docker-compose build
